@@ -57,7 +57,7 @@ def test_regla_identifica_que_clave_contiene_minuscula(regla, clave, esperado):
     ("4_ader56p", True)
 ])
 def test_regla_identifica_que_clave_contiene_numero(regla, clave, esperado):
-    assert regla._contiene_numero(clave) == esperado
+    assert regla.contiene_numero(clave) == esperado
 
 
 @pytest.mark.parametrize("clave, esperado", [
